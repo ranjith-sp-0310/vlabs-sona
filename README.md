@@ -7,9 +7,7 @@
 - [Features](#features)
 - [Lab Scenarios](#lab-scenarios)
 - [UI Prototypes](#ui-prototypes)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
