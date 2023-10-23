@@ -1,6 +1,6 @@
-# Vlabs - Security Redefined
+# Vlabs - Security Education Redefined
 
-**Vlabs - Security Redefined** is an e-learning platform dedicated to cybersecurity labs. This repository contains lab scenarios and UI prototype images for the platform.
+**Vlabs** is an e-learning platform dedicated to cybersecurity labs. This repository contains lab scenarios and UI prototype images for the platform.
 
 ## Table of Contents
 
