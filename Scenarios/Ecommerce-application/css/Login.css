@@ -1,0 +1,335 @@
+/*Section and Background plus Navigaton*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header{
+    
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../Images/PPbackground.jpg);
+    background-size: 100%;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.logoicon
+{
+    width: 120px;
+    border-color: rgb(17, 16, 16);
+}
+nav{
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+
+    width: 50px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    transition: 1s;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: lightcoral;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+/*-------------------Login and Register Div--------------------------------------*/
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 10px;
+    padding: 50px;
+    margin:5% 25% 5% 25%;
+    background-color:rgba(255, 255, 255, 0.7);
+    font-family:sans-serif;
+    
+}
+
+/*Login Left Div*/
+
+.grid-child-left {
+    text-align: left;
+    padding: 0px 15px 0px 0px;
+    border: none;
+    border-right: solid rgb(17, 16, 16);
+    
+}
+
+.Welcome
+{
+    font-family:inherit;
+    text-align: left;
+    font-size: 34px;
+
+}
+input[type = password]
+{
+    width: 80%;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid rgb(43, 42, 42);
+    border-bottom-style:solid;
+    box-sizing: border-box;
+    outline: none;
+    background:transparent;
+}
+input[type = Email]
+{
+    width: 80%;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid rgb(43, 42, 42);
+    box-sizing: border-box;
+    outline: none;
+    background:transparent;
+    
+}
+
+.input_wrapper
+{
+    font-size: 18px;
+}
+.mysub
+{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(240, 235, 231);
+    padding: 3px;
+    margin: 15px 15px 5px 110px;
+    font-family:inherit;
+    list-style-type: none;
+    border-style: groove;
+    font-weight: 800;
+}
+.mysub:hover
+{
+    background-color: black;
+    color: blanchedalmond;
+    width: 180px;
+    height: 60px;
+    transition: 0.3s;
+}
+.logins
+{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.exclusives
+{
+    margin-left: 15px;
+    padding: 10px 0px 10px 5px;
+    font-size: 18px;
+}
+.forgot
+{
+    margin-right: 5px;
+    text-align: right;
+}
+
+/*Login Div right*/
+
+.grid-child-right
+{
+    text-align: left;
+    padding: 0px 0px 0px 15px;
+    margin-top: none;
+    font-size: 20px;
+    
+}
+.alternate
+{
+    font-size: 34px;
+    margin-left: 15px;
+
+    font-family: inherit;
+}
+#alternate1
+{
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.Register
+{
+   /* width: 150px;
+    height: 50px;
+    background-color: rgb(240, 235, 231);
+    padding: 3px;
+    margin: 15px 15px 5px 110px;
+    font-family:inherit;
+    list-style-type: none;
+    border-style: groove;
+    font-weight: 800; */
+    width: 150px;
+    height: 50px;
+    background-color: rgb(240, 235, 231);
+    padding: 3px;
+    margin: 15px 15px 5px 110px;
+    font-family:inherit;
+    list-style-type: none;
+    border-style: groove;
+    font-weight: 800;
+}
+.Register:hover
+{
+    background-color: black;
+    color: blanchedalmond;
+    width: 180px;
+    height: 60px;
+    transition: 0.2s;
+}
+#notice
+{
+ color: rgb(241, 24, 0);
+}
+
+/*--------------------------------------------footer*---------------------------------------------------*/
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #303030;
+    color: white;
+    height: 300px;
+}
+.footer .footer-content{
+    
+    height: 250px;
+    display:flex;
+
+}
+.footer .footer-content .footer-section{
+    flex:1;
+    padding:25px;
+}
+.footer .footer-content h2{
+    color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight:200;
+    margin-left: 25px;
+}
+.footer .footer-content .about .img-footer img{
+    width: 100px;
+}
+.footer .footer-content .about .line hr{
+    width: 75%;
+    
+    margin-left: 0;
+    
+}
+.footer .footer-content .about .contact span{
+    display:block;
+    font: size 3px; 
+    margin-bottom: 8px;
+}
+.footer .footer-content .about .contact .fas{
+    color: #72e6d6;
+}
+.footer .footer-content .about .socials a {
+    border: 1px solid gray;
+    width: 45px;
+    height: 35px;
+    color: azure;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.footer .footer-content .about .socials a:hover{
+    border:1px solid rgba(112, 157, 240, 0.205);
+    color: rgb(152, 216, 228);
+    transition: all .3s;
+}
+.footer .footer-content .links ul a{
+    display: block;
+    margin-bottom: 2px;
+    font-size:medium;
+    color: #686868;
+    text-decoration: none;
+    transition: all.3s;
+}
+.footer .footer-content .links ul li{
+    list-style: none;
+}
+.footer .footer-content .links ul a:hover{
+    color: aliceblue;
+    margin-left: 15px;
+    transition: all.3s;
+}
+.footer .footer-content .team-sec ul a{
+    display: block;
+    margin-bottom: 2px;
+    font-size:medium;
+    color: #686868;
+    text-decoration: none;
+    transition: all.3s;
+}
+.footer .footer-content .team-sec ul li{
+    list-style: none;
+}
+.footer .footer-content .team-sec ul a:hover{
+    color: aliceblue;
+    margin-left: 15px;
+    transition: all.3s;
+}
+.footer .footer-bottom{
+    color:#686868;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    padding-top: 10px;
+
+}

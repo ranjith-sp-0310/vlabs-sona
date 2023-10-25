@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../css/Main.css">
+    <link rel="stylesheet" href="../css/Register.css" class="style">
+    <title>La catalogue</title>
+</head>
+
+<body>
+
+
+    <!--Navigation bar-->
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="../images/logo_png.png"></a>
+            <div class="nav-links" id="nav_links">
+                <button class="btn1" onclick="hideMenu()" style="background-color: transparent; border: 0px;"><i
+                        class="fa fa-close"></i></button>
+                <ul>
+                    <li><a href="../html/index.html">HOME</a></li>
+                    <li><a href="../html/Team.html">ABOUT</a></li>
+                    <li><a href="../php/ProductList.php">SHOP</a></li>  
+                    <li><a href="../html/feedback.html">HELP</a></li>
+                </ul>
+            </div>
+            <button class="btn1" onclick="showMenu()" style="background-color: transparent; border: 0px;"><i
+                    class="fa fa-bars"></i></button>
+        </nav>
+
+    </section>
+
+    <div class="outer-container">
+
+
+        <div class="inner-container">
+            <div class="Topic">
+                Create an Account
+            </div>
+
+            <!--Form Submission-->
+
+            <div class="Form">
+
+           <form action="../php/Register.php" method="POST" id="Form" class="Form-dets" onsubmit="CheckPassword()">     
+                    <input type="text" class="pInput" id="UserName" name="UserName" placeholder="Username"
+                        required></input>
+                    <input type="email" class="pInput" id="UserEmail" name="UserEmail" placeholder="E-mail Address"
+                        required></input>
+
+                    <input type="password" class="pInput" name="UserPassword" id="PWD" min="5" max=10 placeholder="Password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" required></input>
+
+                    <div class="message" id="message">
+                        <h3>Password must contain the following:</h3>
+                        <p id="letter" class="invalid">✔ Lowercase</b> letter</p>
+                        <p id="capital" class="invalid">✔ Uppercase</b> letter</p>
+                        <p id="number" class="invalid">✔ Number</b></p>
+                        <p id="length" class="invalid">✔ Minimum </b>6 characters</b></p>
+                    </div>
+
+                    <input type="password" class="pInput" name="R_pass" id="RPWD" min="5" max=10
+                        placeholder="Re-enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" required></input>
+
+
+                    <div class="terms">
+                        <input type="checkbox" class="check_terms" id="Check_box" onclick="enableClick()"></input>
+                        <label class="termsCond">Agree the terms of services</label>
+                    </div><br><br>
+
+                    <input type="submit" class="sub" id="sub" name="Submit" value="Create account"></input>
+
+                </form>
+
+                <!--End of Form Submission-->
+
+                <div class="txt"> Already have an account? <a href="login.html">Log in</a></div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <!--Footer-->
+    <footer style="margin-top: 100px">
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <div class="img-footer">
+                        <img src="../images/logo_png.png" />
+                    </div>
+                    <br />
+                    <hr />
+                    <div class ="contact">
+                        <span><i class="fas fa-map-pin"></i>&nbsp;   199, La Catalogue, Wakanda, Outerspace.</span>
+                        <span><i class="fas fa-envelope"></i>&nbsp; la Catalogue@Wakanda.com</span>
+                        <span><i class="fas fa-phone"></i>&nbsp;  +94 71 2456786</span>
+                      </div>
+
+                </div>
+                <div class="footer-section links">
+                    <h2>Main Menu</h2>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">HELP</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section team-sec">
+                    <h2>Discover</h2>
+                    <ul>
+                        <li><a href="html\Contact.html">TEAM</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2021 La Catalogue, All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="../js/Register.js"></script>
+
+
+</html>

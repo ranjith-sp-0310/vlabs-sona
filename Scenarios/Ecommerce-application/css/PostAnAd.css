@@ -1,0 +1,193 @@
+/*-------------------------------------------Post an Ad specifics------------------------------------------*/
+.adTopContainer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 10px;
+    padding: 30px;
+    background-color:rgba(250, 248, 248, 0.7);
+    font-family:sans-serif;
+    padding-bottom: -20%;
+    
+
+}
+.adTop_child_left
+{
+    text-align: left;
+    margin-top: none;
+    font-size: 46px;
+    border: none;
+    border-right: rgb(19, 19, 17);
+    border-right-style:groove;
+    max-width: 90%;
+}
+.welcomeAD
+{
+    font-size: 40px;
+}
+.adTop_child_right
+{
+
+    text-align: left;
+    margin-top: none;
+    padding-right: 30px ;
+    font-size: 20px;
+    text-decoration-color: chocolate;
+    
+}
+.adimage
+{
+
+    border-style: groove;
+    border-color: black;
+    object-fit: cover;
+}
+.Adform
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 10px;
+    padding: 30px;
+    font-family: sans-serif;
+    margin: 0% 0% -15% 0%;
+    
+}
+.adformLeft
+{
+    text-align: left;
+    margin-top: none;
+    padding-right: 30px ;
+    border: none;
+    border-right: solid rgb(17, 16, 16);
+    
+}
+.adformRight
+{
+    text-align: left;
+    margin-top: none;
+    padding-left: 30px ;
+
+}
+.selection
+{
+    width: 80%;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 12px 20px 0px 0px;
+    margin: 10px 8px;
+    margin-bottom: 30px;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid rgb(43, 42, 42);
+    box-sizing: border-box;
+    outline: none;
+    background:transparent;
+
+}
+.selection:hover
+{
+    margin-top: 15px;
+    width: 81%;
+    transition: .2s;
+}
+.labels
+{
+    font-size: 20px;
+}
+#radio1
+{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-left: 78px;
+
+}
+#radio2
+{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+.Adtexts
+{
+    width: 80%;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 10px 8px;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid rgb(43, 42, 42);
+    border-bottom-style:solid;
+    box-sizing: border-box;
+    outline: none;
+    background:transparent;
+}
+.text_area
+{
+    width: 80%;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 10px 8px;
+    display: inline-block;
+    border: solid rgb(43.42.42);
+    border-style:ridge;
+    /* border-bottom: 1px solid rgb(43, 42, 42);
+    border-bottom-style:solid; */
+    box-sizing: border-box;
+    outline: none;
+    background:transparent;
+}
+.currencyinput {
+ 
+    width: 80%;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 0px 20px; 
+    /* margin: px 8px; */
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid rgb(43, 42, 42);
+    border-bottom-style:solid;
+    box-sizing: border-box;
+    outline: none;
+    background:transparent;
+}
+.currencyinput input {
+    border: 0;
+    margin-bottom: -5px;
+}
+#Ad_deets
+{
+    font-family: sans-serif;
+    font-size: 24px;
+}
+#image
+{
+    /*width: 80%;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 0px 20px; 
+    margin: 10px 8px; 
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid rgb(43, 42, 42);
+    border-bottom-style:solid;
+    box-sizing: border-box;
+    outline: none; */
+    width: 150px;
+    height: 50px;
+    /* background-color: rgb(240, 235, 231); */
+    padding: 3px;
+    margin: 15px 15px 5px 10px;
+    font-family:inherit;
+    /*list-style-type: none;
+    border-style: groove; 
+    font-weight: 800;
+    margin: 5%; */
+}
+

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/Login.css">
+    <script src="../js/Login.js">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap"
+        rel="stylesheet" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="logoicon" src="../images/logo_png.png"></a>
+            <div class="nav-links" id="nav_links">
+                <ul>
+                    <li><a href="../php/homepage.php">HOME</a></li>
+                    <li><a href="../html/Team.html">ABOUT</a></li>
+                    <li><a href="../php/ProductList.php">SHOP</a></li>
+                    <li><a href="../html/feedback.html">HELP</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Login Division -->
+		<form action ="../php/shippingdetails.php" method="POST">
+		<div class="grid-container">
+            <div class="grid-child-left ">
+                <p class="Welcome">Please Enter Shipping Details</p><br><br>
+                <div class = "fill">
+					
+						<div class="name">
+							Name
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="text" name="Name">
+						</div><br><br>
+						<div class="pn">
+							Phone&nbsp;Number
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="tel" name="Phone_number">
+						</div><br><br>
+						<div class="address">
+							Address
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="text" name="Address">
+						</div><br><br>
+						<div class="city">
+							City
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="text" name="City">
+						</div><br><br>
+			
+						 <!-- <div class=province>
+							 Select province:&nbsp;&nbsp;
+							 <select for="Province">
+							  <option value="Northern">Northern</option>
+							  <option value="North Central">North Central</option>
+							  <option value="Uva">Uva</option>
+							  <option value="Eastern">Eastern</option>
+							  <option value="Western">Western</option>
+							  <option value="Southern">Southern</option>
+							  <option value="Central">Central</option>
+							  <option value="Sabaragamuwa">Sabaragamuwa</option>
+							  <option value="North Western">North Western</option>
+							  </select>
+						 </div><br><br> -->
+			
+						 <div class=district>
+							Select District:&nbsp;&nbsp;&nbsp;&nbsp;
+							<select for="District" name="District">
+							 <option value="Ampara">Ampara</option>
+							 <option value="Anuradhapura">Anuradhapura</option>
+							 <option value="Badulla">Badulla</option>
+							 <option value="Batticaloa">Batticaloa</option>
+							 <option value="Colombo">Colombo</option>
+							 <option value="Galle">Galle</option>
+							 <option value="Gampaha">Gampaha</option>
+							 <option value="Hambantota">Hambantota</option>
+							 <option value="Jaffna">Jaffna</option>
+							 <option value="Kalutara">Kalutara</option>
+							 <option value="Kandy">Kandy</option>
+							 <option value="Kegalle">Kegalle</option>
+							 <option value="Kilinochchi">Kilinochchi</option>
+							 <option value="Kurunegala">Kurunegala</option>
+							 <option value="Mannar">Mannar</option>
+							 <option value="Matale">Matale</option>
+							 <option value="Matara">Matara</option>
+							 <option value="Monaragala">Monaragala</option>
+							 <option value="Mullaitivu">Mullaitivu</option>
+							 <option value="Nuwara Eliya">Nuwara Eliya</option>
+							 <option value="Polonnaruwa">Polonnaruwa</option>
+							 <option value="Puttalam">Puttalam</option>
+							 <option value="Ratnapura">Ratnapura</option>
+							 <option value="Trincomalee">Trincomalee</option>
+							 <option value="Vavuniya">Vavuniya</option>
+							 </select>
+						</div><br><br>
+						
+				</div>
+            </div>
+            <div class="grid-child-right">
+                <div class="sub">
+					<input type="submit" name="Save" class="Register" value="Save and Continue" style="margin-top: 30%;"></div>
+            </div>
+        </div>
+	</form>
+      
+               <!--Footer-->
+    <footer style="margin-top: 300px">
+        <div class="footer">
+          <div class="footer-content">
+            <div class="footer-section about">
+              <div class="img-footer">
+                <img src="../images/logo_png.png" />
+              </div>
+              <br />
+              <div class="line">
+                <hr>
+              </div>
+              <div class ="contact">
+                <span><i class="fas fa-map-pin"></i>&nbsp;   199, La Catalogue, Wakanda, Outerspace.</span>
+                <span><i class="fas fa-envelope"></i>&nbsp; la Catalogue@Wakanda.com</span>
+                <span><i class="fas fa-phone"></i>&nbsp;  +94 71 2456786</span>
+              </div>
+              <br>
+              <!-- <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div> -->
+            </div>
+            <div class="footer-section links">
+              <h2>Main Menu</h2>
+              <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">HELP</a></li>
+              </ul>
+            </div>
+            <div class="footer-section team-sec">
+              <h2>Discover</h2>
+              <ul>
+                <li><a href="html\Contact.html">TEAM</a></li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="footer-bottom">
+            &copy; 2021 La Catalogue, All rights reserved.
+          </div>
+        </div>
+      </footer>
+        </section>
+</body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> MYSHOP </title>
+    <link rel="stylesheet" type="text/css" href="../css/shippingdetails.css">
+	<link rel="stylesheet" href="../css/main.css">
+  </head>
+   <header>
+    <div class="nav1">
+	 <div class="logo-img"></div></div>
+	  <div class="menu">
+       <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Shop</a></li>
+		<li><a href="">Help</a></li>
+		<li><a href="">Account</a></li><br>
+       </ul>
+      </div>
+	  <div class = rectangle>
+	</div>
+	<div class = selector>
+		<p1>Enter your shipping details here</p1>
+	</div><br>
+	   
+	<div class = "fill">
+		<form action ="../php/shippingdetails.php" method="POST">
+			<div class="name">
+				Name
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" name="Name">
+			</div><br><br>
+			<div class="pn">
+				Phone&nbsp;Number
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="tel" name="Phone_number">
+			</div><br><br>
+			<div class="address">
+				Address
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" name="Address">
+			</div><br><br>
+			<div class="city">
+				City
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" name="City">
+			</div><br><br>
+
+		<div class=province>
+				 Select province:&nbsp;&nbsp;
+				 <select for="Province">
+				  <option value="Northern">Northern</option>
+				  <option value="North Central">North Central</option>
+				  <option value="Uva">Uva</option>
+				  <option value="Eastern">Eastern</option>
+				  <option value="Western">Western</option>
+				  <option value="Southern">Southern</option>
+				  <option value="Central">Central</option>
+				  <option value="Sabaragamuwa">Sabaragamuwa</option>
+				  <option value="North Western">North Western</option>
+				  </select>
+			 </div><br><br> -->
+
+			 <!-- <div class=district>
+				Select District:&nbsp;&nbsp;&nbsp;&nbsp;
+				<select for="District" name="District">
+				 <option value="Ampara">Ampara</option>
+				 <option value="Anuradhapura">Anuradhapura</option>
+				 <option value="Badulla">Badulla</option>
+				 <option value="Batticaloa">Batticaloa</option>
+				 <option value="Colombo">Colombo</option>
+				 <option value="Galle">Galle</option>
+				 <option value="Gampaha">Gampaha</option>
+				 <option value="Hambantota">Hambantota</option>
+				 <option value="Jaffna">Jaffna</option>
+				 <option value="Kalutara">Kalutara</option>
+				 <option value="Kandy">Kandy</option>
+				 <option value="Kegalle">Kegalle</option>
+				 <option value="Kilinochchi">Kilinochchi</option>
+				 <option value="Kurunegala">Kurunegala</option>
+				 <option value="Mannar">Mannar</option>
+				 <option value="Matale">Matale</option>
+				 <option value="Matara">Matara</option>
+				 <option value="Monaragala">Monaragala</option>
+				 <option value="Mullaitivu">Mullaitivu</option>
+				 <option value="Nuwara Eliya">Nuwara Eliya</option>
+				 <option value="Polonnaruwa">Polonnaruwa</option>
+				 <option value="Puttalam">Puttalam</option>
+				 <option value="Ratnapura">Ratnapura</option>
+				 <option value="Trincomalee">Trincomalee</option>
+				 <option value="Vavuniya">Vavuniya</option>
+				 </select>
+			</div><br><br>
+            
+			<div class="sub">
+			 <input type="submit" name="Save" value="Save and Continue" ></div>
+		</form>
+	</div>
+
+	     <div class="header-img"></div>
+	</header>
+	
+	
+	     
+      <body>
+	<footer>	  
+	 <br>
+	 
+	  <div class="nav5">
+	           <a>Main Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>Discover</a>	<br><br>		   
+	           <a href="">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Team</a><br>
+	           <a href="">About</a><br>
+	           <a href="">Shop</a><br>
+	           <a href="">Help</a><br>
+	           <a href="">Account</a>
+	         </div>
+	  
+			 <div class="nav7">
+		   <img src = "logo_png.png" width = "200" height = "150" alt = "myshop"></div> 
+		   
+	  <p3>199,Myshop,Wakanda,</p3>
+	  <br>
+	  <p4>Outerspace.</p4>
+	  
+	 <hr></hr>
+	 
+	 <h5>&copy; 2021 Mysop , All rights reserved</h5> 
+	  <div class="container"> 
+	      <a href="https://www.facebook.com/"><button class="btn btn5"><img src = "facebook.jpg" width = "30px" height = "30px" alt = "myshop"></button><a>
+	      <a href="https://www.twitter.com/"><button class="btn btn6"><img src = "twitter.jpg" width = "30px" height = "30px" alt = "myshop"></button>
+		  <a href="https://www.instergram.com/"><button class="btn btn7"><img src = "instergram.jpg" width = "30px" height = "30px" alt = "myshop"></button>
+	      <a href="https://www.google.com/"><button class="btn btn8"><img src = "g+.jpg" width = "30px" height = "30px" alt = "myshop"></button>
+	     </div>
+   </footer>
+   
+      </body>
+</html> --> 

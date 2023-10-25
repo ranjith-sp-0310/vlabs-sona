@@ -1,0 +1,167 @@
+.header-img {
+  width: 1920px;
+  height: 1080px;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(PPbackground.jpg);
+  background-size: 100%;
+}
+.logo-img {
+  width: 180px;
+  height: 140px;
+  background: url(logo_png.png);
+  background-size: 100%;
+}
+.nav1{
+	position:absolute;
+	top:100px;
+	margin-left:150px;
+	transform: translate(-50%,-50%);
+}
+.nav2{
+	position:absolute;
+	top:180px;
+	margin-left:750px;
+	color:white;
+	font-size:50px;
+}
+.nav3{
+	position:absolute;
+	top:260px;
+	margin-left:600px;
+	color:grey;
+	font-size:40px;
+}
+.nav4{
+	position:absolute;
+	background:url(Sucess.jpg);
+    width: 150px;
+    height: 150px;
+	background-size: 100%;
+    margin-left:250px;
+}
+.nav5{
+	margin-left:1300px;	
+	font-size:16px;
+	color:black;
+}
+.nav6{
+	margin-left:1350px;	
+	
+}
+.nav7{
+	position:absolute;
+	top:1100px;
+	margin-left:2px;
+}
+.menu {
+  float: right;
+}
+.menu ul {
+  list-style: none;
+  margin: 8px;
+  padding: 0;
+  margin-top:40px;
+  margin-right:60px;
+}
+.menu li {
+  display: inline-block;
+  padding:10px;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Lato';
+}
+.menu a:hover {
+  text-decoration: none;
+}
+.btn5{
+	width:40px;
+	height:40px;
+	margin-left:1700px;
+	margin-top:5px;
+}
+.btn6{
+	width:40px;
+	height:40px;
+
+}
+.btn7{
+	width:40px;
+	height:40px;
+	
+}
+.btn8{
+	width:40px;
+	height:40px;
+	
+}
+h5{
+	position:absolute;
+	margin-top:10px;
+	margin-left:10px;
+	font-size:20px;
+}
+footer{
+	background-color:grey;
+	width:1920px;
+}
+p3{
+	font-size:13px;
+	color:black;
+	margin-left:15px;
+}
+p4{
+	color:black;
+	font-size:13px;
+	margin-left:15px;
+}
+.rectangle{
+	position: absolute;
+    width:1000px;
+	height:600px;
+	margin-top: 250px;
+	margin-left:450px;
+	background-color: white;
+
+}
+.selector{
+	position: absolute;
+	
+	margin-top: 260px;
+	margin-left: 480px;
+}
+p1{
+	font-size: 40px;
+	color: black;
+}
+.fill{
+	position: absolute;
+	margin-top:350px;
+    margin-left: 480px;
+}
+.name{
+	font-size: 30px;
+}
+.pn{
+	font-size: 30px;
+}
+.address{
+	font-size: 30px;
+}
+.city{
+	font-size: 30px;
+}
+.province{
+	font-size: 30px;
+}
+.district{
+	font-size: 30px;
+}
+.sub{
+	position: relative;
+	margin-left: 750px;
+	width:40px;
+}

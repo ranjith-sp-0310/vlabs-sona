@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../css/feedback.css"/>
+    <title>La Catalogue</title>
+  </head>
+
+  <body>
+    <!--Nav bar -->
+    <section class="header">
+      <nav>
+        <a href="">
+          <img src="../images/logo_png.png" style="width: 100px" />
+        </a>
+        <div class="nav-links" id="nav_links">
+          <button
+            class="btn1"
+            onclick="hideMenu()"
+            style="background-color: transparent; border: 0px"
+          >
+            <i class="fa fa-close"></i>
+          </button>
+          <ul>
+            <li><a href="../html/index.html">HOME</a></li>
+            <li><a href="../html/Team.html">ABOUT</a></li>
+            <li><a href="../php/ProductList.php">SHOP</a></li>  
+            <li><a href="../html/feedback.html">HELP</a></li>
+            <li><a href="../html/Login.html">ACCOUNT</a></li>
+          </ul>
+        </div>
+        <button
+          class="btn1"
+          onclick="showMenu()"
+          style="background-color: transparent; border: 0px"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+      </nav>
+    </section>
+    <!--end of nav bar-->
+    <div class="page-wrapper">
+        <!-- Start of Content -->
+        <section>
+            <div class="box-container">
+            <div class="box">
+                <div class="heading">FAQs</div>
+                <!-- FAQ card 1 -->
+                <div class="faq-card" id="quesion1">
+                <a href="#quesion1" class="quesion-link">
+                    How to post an ad?
+                    <img src="../images/feedback/down_arrow.svg" alt="" class="arrow">
+                </a>
+                <div class="answer">
+                    <p>Posting an ad on MyShop is quick and easy! 
+                    Simply click the yellow Post Ad button and follow the instructions.</p>
+                </div>
+                </div>
+                <!-- FAQ card 2 -->
+                <div class="faq-card" id="quesion2">
+                <a href="#quesion2" class="quesion-link">
+                    How do I delete an AD?
+                    <img src="../images/feedback/down_arrow.svg" alt="" class="arrow">
+                </a>
+                <div class="answer">
+                    <p>To delete an ad, please go to your ads page and click on the "Delete ad" option.</p>
+                </div>
+                </div>
+                <!-- FAQ card 3 -->
+                <div class="faq-card" id="quesion3">
+                <a href="#quesion3" class="quesion-link">
+                    How long do ads stay on MyShop?
+                    <img src="../images/feedback/down_arrow.svg" alt="" class="arrow">
+                </a>
+                <div class="answer">
+                    <p>Ads appear for 60 days, unless you delete them earlier.</p>
+                </div>
+                </div>
+                <!-- FAQ card 4 -->
+                <div class="faq-card" id="quesion4">
+                <a href="#quesion4" class="quesion-link">
+                    What is DoorStep Delivery
+                    <img src="../images/feedback/down_arrow.svg" alt="" class="arrow">
+                </a>
+                <div class="answer">
+                    <p>Simply look for an ad with the Doorstep Delivery option, 
+                        click on “Order Online” and fill out the form. The seller will call you to confirm the order 
+                        and arrange a delivery time.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <br><br>
+        
+        
+        <div class="box-container">
+          <div class="box">
+              <div class="heading">FEEDBACK</div>
+          </div>
+        </div>
+
+        <!--Feedback form-->
+
+        <div class="faq-field">
+            <form action="../php/feedback.php" class="faq-items" method="POST" onsubmit="return submit_form()">
+              <div class="form-container">
+                <div class="heading"> Floor is yours!</div>
+                <div class="forName">
+                  <input type="text" name="firstName" id="firstName" placeholder="First Name" class="input-box" required>
+                  <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="input-box" required>
+                </div>
+                <div class="forContact">
+                  <input type="email" name="email" id="email" placeholder="Email" class="input-box" required>
+                </div>
+                
+                <textarea name="message" class="input-box-message" name="message" id="message" cols="30" rows="10" placeholder="Comment" required></textarea>
+                <div class = "buttons">
+                  <input class="submit" type="submit" name="submit" id="submit" value="SUBMIT"> </input>
+                  <input class="submit" type="reset" id="reset" value="RESET"> </input>
+                 </div>
+              </div>
+        
+              
+            </form>
+            
+        </div>
+
+    </div>
+    <!--Footer-->
+    <footer style="margin-top: 300px">
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <div class="img-footer">
+              <img src="../images/logo_png.png" />
+            </div>
+            <br />
+            <div class="line">
+              <hr>
+            </div>
+            <div class ="contact">
+              <span><i class="fas fa-map-pin"></i>&nbsp;&nbsp;199, LA CATALOGUE, WAKANDA, OUTERSPACE.</span>
+              <span><i class="fas fa-envelope"></i>&nbsp; lacatalogue@wakanda.com</span>
+              <span><i class="fas fa-phone"></i>&nbsp;  +94 71 2456786</span>
+            </div>
+            <br>
+
+          </div>
+          <div class="footer-section links">
+            <h2>Main Menu</h2>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">HELP</a></li>
+            </ul>
+          </div>
+          <div class="footer-section team-sec">
+            <h2>Discover</h2>
+            <ul>
+              <li><a href="html\Team.html">TEAM</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          &copy; 2021 La Catalogue, All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/feedback.js"></script>
+  </body>
+</html>

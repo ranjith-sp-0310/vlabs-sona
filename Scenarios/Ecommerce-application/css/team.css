@@ -1,0 +1,224 @@
+.h1{
+    margin-top: 30px;
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tdescription{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: justify;
+    text-align: center;
+}
+.h2 {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.ftext1{
+  font-size: 20px;
+  color:black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  margin: 20px 10px 10px 0px;
+  text-align: center;
+}
+.com{
+  background:lightcyan;
+  margin:5px 0px 0px 0px;
+  font-size:15px;
+  border-radius: 10px;
+  margin-left: 250px;
+  
+}
+.ftext2{
+  font-size: 20px;
+  color:rgb(0, 0, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  margin: 20px 10px 10px 0px;
+  text-align: center;
+  
+}
+
+.ema{
+  background: lightcyan;
+  margin:5px 0px 0px 0px;
+  font-size:15px;
+  border-radius: 10px;
+  margin-left: 250px;
+  width: 250px;
+  height: 10px;
+  
+}
+input[type=submit]{
+  background-color: rgb(248, 184, 184);
+  font-family: sans-serif;
+  font-size: 15px;
+  margin :20px 10px 10px 0px;
+  width:250px;
+  border-radius: 10px;
+  height: 30px;
+  margin-left: 490px;
+
+}
+
+.team-info-slider {
+    width: 97%;
+    height: 260px;
+    margin-left: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(238, 238, 238, 0.521);
+  }
+  
+  .slides {
+    width: 500%;
+    height: 260px;
+    display: flex;
+  }
+  
+  .slides input {
+    display: none;
+  }
+  
+  .slide {
+    display: flex;
+    width: 1580px;
+    padding-left: 5px;
+    transition: 3s;
+  }
+  
+  .slide img {
+    width: 250px;
+    height: 220px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .div-mem-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mem-name {
+    width: 850px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px;
+  }
+  
+  .mem-info {
+    font-size: 15px;
+    width: 850px;
+    margin: 0px 25px 25px 25px;
+    padding-left: 10px;
+    border-left: 5px solid lightcoral;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .mem-contact {
+    width: 850px;
+    font-size: 14px;
+    margin: 20px 25px 25px 25px;
+  }
+  
+  .mem-contact a {
+    text-decoration: none;
+    color: lightcoral;
+  }
+  
+  /* manual sliding css */
+  
+  .slide-manual {
+    position: absolute;
+    width: 90%;
+    margin-top: -31px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn {
+    border: 2px solid lightcoral;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .manual-btn:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  .manual-btn:hover {
+    background: lightcoral;
+    opacity: 1;
+  }
+  
+  #radio1:checked ~ .begin {
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .begin {
+    margin-left: -1580px;
+  }
+  
+  #radio3:checked ~ .begin {
+    margin-left: -3162px;
+  }
+  
+  #radio4:checked ~ .begin {
+    margin-left: -4745px;
+  }
+  
+  #radio5:checked ~ .begin {
+    margin-left: -6330px;
+  }
+  
+  /* automatic sliding css */
+  
+  .slide-auto {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 30vh;
+  }
+  
+  .slide-auto div {
+    border: 2px solid lightcoral;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  
+  .slide-auto div:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  #radio1:checked ~ .slide-auto .auto-btn1 {
+    background-color: lightcoral;
+  }
+  
+  #radio2:checked ~ .slide-auto .auto-btn2 {
+    background-color: lightcoral;
+  }
+  
+  #radio3:checked ~ .slide-auto .auto-btn3 {
+    background-color: lightcoral;
+  }
+  
+  #radio4:checked ~ .slide-auto .auto-btn4 {
+    background-color: lightcoral;
+  }
+  
+  #radio5:checked ~ .slide-auto .auto-btn5 {
+    background-color: lightcoral;
+  }
