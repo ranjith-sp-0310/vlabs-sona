@@ -21,20 +21,6 @@ const db = mysql.createConnection({
     console.log('Connected to the database');
   });
 
-  const checkAccessControl = (req, res, next) => {
-    // In a real scenario, you would check if the user has the necessary permissions.
-    // For demonstration purposes, we're allowing access to everyone for now.
-    next();
-};
-
-// Apply the middleware to the /patients endpoint
-app.get('/patients', checkAccessControl, (req, res) => {
-    const query = 'SELECT * FROM patients';
-    db.query(query, (err, results) => {
-        if (err) throw err;
-        res.render('patient', { results: results });
-    });
-});
 
 
   app.listen(port, () => {
