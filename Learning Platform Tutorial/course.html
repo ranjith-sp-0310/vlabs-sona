@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Lab - Courses</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Include Font Awesome CSS -->
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-dark .navbar-toggler-icon {
+            background-color:  #007bff;
+            border-radius: 2px;
+        }
+        .navbar-dark .navbar-toggler {
+            border-color: #1542bc;
+        }
+        /* .navbar-dark .navbar-toggler:hover {
+            background-color: #fff;
+        } */
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+        }
+        .logo-img {
+            max-width: 100px; /* Adjust the maximum width of the logo image */
+        }
+        .account-icon, .home-icon {
+            font-size: 24px;
+            margin-right: 5px;
+            text-align: center; /* Center the icon */
+        }
+        .content {
+            flex-grow: 1;
+        }
+        .jumbotron {
+            background-color: #fff;
+            margin-top: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        /* Added styles for course cards */
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .card-icon {
+            font-size: 48px; /* Adjust the icon size as needed */
+            text-align: center; /* Center the icon */
+            margin-top: 20px; /* Add space between icon and text */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="Logo1.png" alt="Virtual Lab Logo" class="logo-img">
+            Virtual Lab
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">
+                        <i class="fas fa-home home-icon"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Account.html">
+                        <i class="fas fa-user account-icon"></i> Account
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Content -->
+<div class="content">
+    <!-- Header -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Explore Our Courses</h1>
+            <p>Choose from a variety of courses and start your learning journey.</p>
+        </div>
+    </div>
+
+    <!-- Courses Section -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Course Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <i class="fas fa-desktop card-icon fa-lg fa-fw"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Computer Science</h5>
+                        <p class="card-text">Explore the world of computer science.</p>
+                        <a href="#" class="btn btn-primary">Enroll</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <i class="fas fa-shield-alt card-icon fa-lg fa-fw"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Cybersecurity</h5>
+                        <p class="card-text">Learn how to protect against cyber threats.</p>
+                        <a href="Cyber.html" class="btn btn-primary">Enroll</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <i class="fas fa-network-wired card-icon fa-lg fa-fw"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Network Engineering</h5>
+                        <p class="card-text">Discover the world of network engineering.</p>
+                        <a href="#" class="btn btn-primary">Enroll</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2023 Virtual Lab. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- JavaScript dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

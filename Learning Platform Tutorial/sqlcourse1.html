@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Tasks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .control-options {
+            display: flex;
+            justify-content: space-between;
+        }
+        .task-count {
+            font-weight: bold;
+        }
+        .card {
+            margin-top: 20px;
+        }
+        .progress-bar {
+            height: 20px;
+        }
+        .progress-hidden {
+            display: none;
+        }
+        .progress-text {
+            margin-top: 10px;
+        }
+        .progress-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="control-options">
+        <div class="task-count">Tasks Available: 3</div>
+        <div class="progress-text">
+            <span class="progress-icon">✅</span> Completed: 1
+            <span class="progress-icon">⬜</span> Remaining: 2
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Task 1: SQL Query</h5>
+            <p class="card-text">Write an SQL query to select all records from the "students" table.</p>
+            <a href="https://www.example.com/sql-query-reference" class="card-link" target="_blank">Google Reference</a>
+            <form id="task1-form">
+                <div class="form-group">
+                    <label for="task1-answer">Your Answer:</label>
+                    <textarea class="form-control" id="task1-answer" rows="4"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary float-right" id="task1-submit">Submit</button>
+            </form>
+            <div class="progress progress-hidden" id="task1-progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add more task cards here (similar to Task 1) -->
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // JavaScript to check answers and show progress
+    const task1Form = document.getElementById("task1-form");
+    const task1Answer = document.getElementById("task1-answer");
+    const task1Submit = document.getElementById("task1-submit");
+    const task1Progress = document.getElementById("task1-progress");
+
+    task1Submit.addEventListener("click", function () {
+        // Check if the user's answer is correct (you can define your own criteria here)
+        const userAnswer = task1Answer.value.trim().toLowerCase();
+        const correctAnswer = "SELECT * FROM students";
+
+        if (userAnswer === correctAnswer) {
+            task1Progress.classList.remove("progress-hidden");
+        }
+    });
+</script>
+
+</body>
+</html>

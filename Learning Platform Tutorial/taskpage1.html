@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Labs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+  
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-dark .navbar-toggler-icon {
+            background-color:  #007bff;
+            border-radius: 2px;
+        }
+        .navbar-dark .navbar-toggler {
+            border-color: #1542bc;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .logo-img {
+            max-width: 100px;
+        }
+
+        .account-icon,
+        .home-icon {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .content {
+            flex-grow: 1;
+        }
+
+        .jumbotron {
+            background-color: #fff;
+            margin-top: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .password-toggle-button {
+            cursor: pointer;
+        }
+
+        .navbar-nav .search-box {
+            margin-right: 10px;
+        }
+
+        .navbar-nav .account-icon {
+            font-size: 20px;
+        }
+
+        /* Style to display a tick mark */
+        .completed-task {
+            color: #5bc0de; /* Blue color, you can adjust this color as needed */
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar (Account Page) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Logo1.png" alt="Virtual Lab Logo" class="logo-img">
+                Virtual Lab
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">
+                            <i class="fas fa-home home-icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Account.html">
+                            <i class="fas fa-user account-icon"></i> Account
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <div class="container h-100">
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="text-center my-4">
+                 <h2 style="margin-top: 60px;" >Learn the basics of Network Enumeration</h2>
+                </div>
+            </div>
+        </div>
+    
+       <!-- Nmap Box -->
+<div class="row my-4">
+    <div class="col-md-12">
+        <div class="card" style="background-color: #add8e6;">
+            <div class="container">
+                <label class="font-weight-bold">
+                    <i class="fas fa-graduation-cap"></i> Nmap for beginners
+                </label>
+                <div class="control-options">
+                    <div class="task-count">Tasks Available: 3</div>
+                    <!-- Add an ID to the progress text div for easy access -->
+<div class="progress-text" id="progressText">
+    <span class="progress-icon">✅</span> Completed: 1
+    <span class="progress-icon">⬜</span> Remaining: 2
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+
+        
+
+<!-- virtual Box -->
+<div class="row my-4">
+    <div class="col-md-8 mx-auto">
+        <div class="card" class="card border-primary" style="background-color: #add8e6;">
+            <div class="card-body">
+                <p class="font-weight-bold">START MACHINE</p>
+                <p class="font-weight-bold">Start the target machine, and the IP will show here</p>
+                <button style="float: right;" class="btn btn-dark" class="font-weight-bold">Start Machine</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+       <!-- TASK 1 -->
+<div class="row my-4">
+    <div class="col-md-8 mx-auto text-center">
+        <div class="card border-primary" style="background-color: #add8e6;">
+            <div class="card-body">
+                <p class="font-weight-bold">TASK 1</p>
+                <p class="font-weight-bold">What is the name of the most common tool for finding open ports on a target?</p>
+                <label class="font-weight-bold">Answer:</label>
+                <input type="text" id="ans1" class="form-control" placeholder="xxxxxxxxxxxxxxx">
+                <button class="btn btn-primary mt-3" style="float: right;" onclick="markTaskCompleted(1)">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TASK 2 -->
+<div class="row my-4">
+    <div class="col-md-8 mx-auto text-center">
+        <div class="card border-primary" style="background-color: #add8e6;">
+            <div class="card-body">
+                <p class="font-weight-bold">TASK 2</p>
+                <p class="font-weight-bold">What was the service running on port 80 and 443?</p>
+                <label class="font-weight-bold">Answer:</label>
+                <input type="text" id="ans2" class="form-control" placeholder="xxxxxxxxxxxxxxx">
+                <button class="btn btn-primary mt-3"style="float: right;" onclick="markTaskCompleted(2)">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TASK 3 -->
+<div class="row my-4">
+    <div class="col-md-8 mx-auto text-center">
+        <div class="card border-primary" style="background-color: #add8e6;">
+            <div class="card-body">
+                <p class="font-weight-bold">TASK 3</p>
+                    <p class="font-weight-bold"> was the service running on port 3389?</p>
+                <label class="font-weight-bold">Answer:</label>
+                <input type="text" id="ans3" class="form-control" placeholder="xxxxxxxxxxxxxxx">
+                <button class="btn btn-primary mt-3" style="float: right;" onclick="markTaskCompleted(3)">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TASK 4 -->
+<div class="row my-4">
+    <div class="col-md-8 mx-auto text-center">
+        <div class="card border-primary" style="background-color: #add8e6;">
+            <div class="card-body">
+                <p class="font-weight-bold">TASK 4</p>
+                <p class="font-weight-bold">What is the CVE version of the vulnerability in the RDP?</p>
+                <label class="font-weight-bold">Answer:</label>
+                <input type="text" id="ans4" class="form-control" placeholder="xxxxxxxxxxxxxxx">
+                <button class="btn btn-primary mt-3" style="float: right;" onclick="markTaskCompleted(4)">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2023 Virtual Lab. All rights reserved.</p>
+    </div>
+</footer>
+
+    <!-- JavaScript to update the task count and mark completed tasks -->
+    <!-- JavaScript to update the task count and mark completed tasks -->
+<!-- JavaScript to update the task count and mark completed tasks -->
+<!-- JavaScript to update the task count and mark completed tasks -->
+<!-- JavaScript to update the task count and mark completed tasks -->
+<script>
+    const totalTasks = 4;
+    let completedTasks = 0;
+
+  // Function to update the task count and progress text
+// Function to update the task count and progress text
+function updateTaskCount() {
+    const taskCount = document.getElementById("taskCount");
+    taskCount.textContent = `${completedTasks} of ${totalTasks} tasks completed`;
+
+    // Update the progress text based on completed and remaining tasks
+    const completedText = `${completedTasks} of ${totalTasks}`;
+    const remainingText = totalTasks - completedTasks;
+    
+    const progressText = document.getElementById("progressText");
+    progressText.innerHTML = `
+        <span class="progress-icon">✅</span> Completed: ${completedText}
+        <span class="progress-icon">⬜</span> Remaining: ${remainingText}
+    `;
+}
+
+
+
+    // Function to mark a task as completed
+    function markTaskCompleted(taskNumber) {
+        const answerField = document.getElementById(`ans${taskNumber}`);
+        if (answerField.value.trim() !== "") {
+            completedTasks++;
+            answerField.disabled = true;
+            answerField.classList.add("completed-task");
+        }
+        updateTaskCount();
+
+        // Check if all tasks are completed and disable the "Submit" button
+        if (completedTasks === totalTasks) {
+            for (let i = 1; i <= totalTasks; i++) {
+                document.getElementById(`ans${i}`).disabled = true;
+            }
+        }
+
+        // Hide the completed tasks that exceed the total tasks
+        for (let i = totalTasks + 1; i <= 4; i++) {
+            const completedTask = document.getElementById(`ans${i}`);
+            completedTask.parentElement.style.display = "none";
+        }
+    }
+
+    function markNmapTaskCompleted() {
+        const nmapCompletedCheckbox = document.getElementById("nmapCompleted");
+        nmapCompletedCheckbox.checked = true;
+    }
+
+    // Initialize the task count
+    updateTaskCount();
+    markNmapTaskCompleted();
+</script>
+
+
+
+</body>
+</html>
