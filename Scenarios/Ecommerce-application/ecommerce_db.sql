@@ -11,16 +11,6 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `la catalogue`
---
-
 -- --------------------------------------------------------
 
 --
@@ -39,7 +29,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`AdminID`, `AdminName`, `AdminEmail`, `AdminPass`) VALUES
-(1, 'Chanukya', 'Chanukya@LaCatalogue.com', 'Password@123');
+(1, 'admin', 'admin@gmail.com', 'admin@123');
 
 -- --------------------------------------------------------
 
@@ -62,8 +52,8 @@ CREATE TABLE `cart` (
 -- Dumping data for table `cart`
 --
 
-INSERT INTO `cart` (`CartID`, `CartIN`, `CartIP`, `CartFinalPrice`, `mail`, `cardname`, `cardno`, `cardtype`) VALUES
-(125, 'Guitar', 30000, 30000, 'MinodPerera@gmail.com', 'Minod Perera', 100020003000, 'MasterCard');
+-- INSERT INTO `cart` (`CartID`, `CartIN`, `CartIP`, `CartFinalPrice`, `mail`, `cardname`, `cardno`, `cardtype`) VALUES
+-- (125, 'Guitar', 30000, 30000, 'MinodPerera@gmail.com', 'Minod Perera', 100020003000, 'MasterCard');
 
 -- --------------------------------------------------------
 
@@ -82,9 +72,9 @@ CREATE TABLE `feedback` (
 -- Dumping data for table `feedback`
 --
 
-INSERT INTO `feedback` (`firstname`, `lastname`, `email`, `comment`) VALUES
-('Dilshan', 'Dil', 'Dilshan@gmail.com', 'hello 2022'),
-('Minod', 'Perera', 'MinodPerera@gmail.com', 'This is feedback left before');
+-- INSERT INTO `feedback` (`firstname`, `lastname`, `email`, `comment`) VALUES
+-- ('Dilshan', 'Dil', 'Dilshan@gmail.com', 'hello 2022'),
+-- ('Minod', 'Perera', 'MinodPerera@gmail.com', 'This is feedback left before');
 
 -- --------------------------------------------------------
 
@@ -133,8 +123,8 @@ CREATE TABLE `registration` (
 -- Dumping data for table `registration`
 --
 
-INSERT INTO `registration` (`UserID`, `UserName`, `UserEmail`, `UserPassword`) VALUES
-(7, 'MinodPerera', 'MinodPerera@gmail.com', 'Password@123');
+-- INSERT INTO `registration` (`UserID`, `UserName`, `UserEmail`, `UserPassword`) VALUES
+-- (7, 'MinodPerera', 'MinodPerera@gmail.com', 'Password@123');
 
 -- --------------------------------------------------------
 
@@ -156,8 +146,8 @@ CREATE TABLE `shippingdetails` (
 -- Dumping data for table `shippingdetails`
 --
 
-INSERT INTO `shippingdetails` (`SID`, `SName`, `SNo`, `SAddress`, `SCity`, `SDistrict`, `email`) VALUES
-(9, 'Minod Perera', '0770080945', 'no. 5/3,', 'Colombo 5', 'Puttalam', 'MinodPerera@gmail.com');
+-- INSERT INTO `shippingdetails` (`SID`, `SName`, `SNo`, `SAddress`, `SCity`, `SDistrict`, `email`) VALUES
+-- (9, 'Minod Perera', '0770080945', 'no. 5/3,', 'Colombo 5', 'Puttalam', 'MinodPerera@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -221,7 +211,3 @@ ALTER TABLE `registration`
 ALTER TABLE `shippingdetails`
   MODIFY `SID` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
